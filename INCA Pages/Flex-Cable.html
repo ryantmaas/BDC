@@ -1,0 +1,308 @@
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<style>
+	#column-left {
+		margin: 0px;
+	}
+	#column-left .col-main {
+		width: 960px;
+	}
+	p {
+		font-size: 14px;
+		line-height: 1.42857143;
+	}
+	li {
+		font-size: 14px;
+	}
+	h1 {
+		font-size: 25px;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	h3 {
+		font-size: 18px;
+	}
+	.page-header {
+		padding-bottom: 9px;
+		margin: 10px 0 20px;
+		border-bottom: 2px solid #eee
+	}
+	.breadcrumbs {
+		background-color: #cdd0d6;
+		padding: 20px 10px;
+	}
+	.breadcrumbs p {
+		padding-bottom: 0px;
+	}
+	.hero {
+		width: 100%;
+		height: 237px;
+		padding: 25px 15px 0px 15px;;
+		background-color: #BDC3C7;
+		border-top: 2px solid #e7e7e7;
+		border-bottom: 2px solid #e7e7e7;
+	}
+	.hero .image {
+		float: left;
+		width: 215px;
+		height: 196px;
+		margin-top: 15px;
+	}
+	.hero .text {
+		float: left;
+		width: 700px;
+		margin-top: 20px;
+		padding-left: 15px;
+	}
+	.hero .text p {
+		font-size: 16px;
+	}
+	.content {
+		width: 100%;
+		margin-top: 20px;
+	}
+	.content .features {
+		width: 700px;
+		border-right: 1px solid #e7e7e7;
+		padding: 15px;
+		float: left;
+	}
+	.content .ctas {
+		width: 205px;
+		padding: 10px;
+		float: left;
+	}
+	.content .panel h3 {
+		color: #fff;
+		background-color: #004A90;
+		padding: 8px;
+		text-align: center;
+	}
+	.content .panel {
+		border: 1px solid #ABABAB;
+		border-radius: 3px;
+		margin-bottom: 20px;
+	}
+	.content .panel .panel-body {
+		padding: 10px 10px 30px 10px;
+	}
+	.col-main ul {
+   margin-left: 0px;
+}
+.column-main ul li, .col-main ul li {
+    list-style-image: none;
+    list-style-type: none;
+    padding-left: 0px;
+    background: none;
+    line-height: 16px;
+    padding-bottom: 5px;
+    margin: 0;
+	}
+	.panel .panel-body ul {
+		list-style: none;
+	}
+	.panel .panel-body li {
+		border-bottom: 1px solid #d2d2d2;
+		padding: 10px 5px;
+	}
+	.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.table > tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+.table .table {
+  background-color: #fff;
+}
+.table-bordered {
+  border: 1px solid #ddd;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #ddd;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+table col[class*="col-"] {
+  position: static;
+  display: table-column;
+  float: none;
+}
+table td[class*="col-"],
+table th[class*="col-"] {
+  position: static;
+  display: table-cell;
+  float: none;
+}
+.thumbnail {
+	width: 205px;
+	float: left;
+	display: block;
+		padding: 4px;
+		margin-left: 15px;
+		line-height: 1.42857143;
+		background-color: #fff;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		-webkit-transition: border .2s ease-in-out;
+		-o-transition: border .2s ease-in-out;
+		transition: border .2s ease-in-out;
+}
+.thumbnail .caption {
+	padding: 5px;
+}
+.thumbnail h3 {
+text-align: center;
+margin-bottom: 10px;
+}
+.thumbnail .caption p {
+font-size: 12px;
+}
+.btn-primary {
+	color: #fff;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+	}
+.btn {
+	display: block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+</style>
+</head>
+<div class="breadcrumbs">
+		<p><strong>You Are Here:</strong> <a href="http://www.belden.com/products/">Products</a> / <a href="http://www.belden.com/products/industrialcable/index.cfm">Industrial Cable</a> / Flexible Automation Cable</p>
+</div>
+<div class="hero">
+	<h1>Flexible Automation Cable</h1>
+	<div class="image"><img src="/docs/images2/images/FlexCable.png" style=" height: 195px; margin: auto; display: block;"></div>
+	<div class="text">
+		<p>The integrity of your system is only as robust as the product you use. From factory automation to process control, Belden flexible automation cables offer exceptional performance, superior flexibility and extended cable life in near-constant motion applications.</p>
+		<br>
+	</div>
+</div>
+<div class="content">
+	<div class="features">
+		<div class="page-header">
+			<h2>Portfolio At A Glace</h2>
+		</div>
+		<p>Movement causes added stress on all cables, from excess bending during installation to constantly moving robotics arms. Belden provides a wide range of industrial-grade flex cables, engineered to withstand extreme mechanical stress, various chemicals and liquids, wide temperature ranges, high speed motion, and other harsh criteria.</p>
+		<p><span style="color: #165db0;"><strong>Infinity C-TC+ Control Cables for Extreme Flexing</strong></span> - To ensure optimal performance at 10 million flex cycles, Belden utilizes a unique cable manufacturing process which nearly eradicates cable memory and eliminates the performance concerns associated with conductor torque and fatigue.</p>
+		<p><span style="color: #165db0;"><strong>Infinity FCC Cables for Moderate Flexing</strong></span> - A cost-effective alternative to C-TC+ cables, these cables are rated for 1 million flex cycles while still meeting the NFPA requirements for industrial machinery. Used in many of the same applications as C-TC+ cables, these FCC cables produce the same unique features and benefits to ensure maximum uptime for everyday flexible applications.</p>
+		<p><span style="color: #165db0;"><strong>Flex Vision</strong></span> - Continuous flex video cables designed specifically for machine vision applications. These cables are ideal for motion-controlled video inspection and measurement equipment.</p>
+		<p><span style="color: #165db0;"><strong>Flex Data</strong></span> - Designed for industrial applications where precise data transmission is combined with high-flexing. These cables are ideal for effective operation of computer controlled equipment or other automated production process, even in harsh environments.</p>
+		<p><span style="color: #165db0;"><strong>Flex Ethernet</strong></span> - Belden's line of Ethernet and PROFINET cables are designed to meet the challenging demands of today's industrial networking environment.  With flexible designs rated up to 5 or 10 million flex cycles, you can transmit data directly to and from components of your automation equipment.  For more information on industrial Ethernet solutions, including continuous flex Ethernet and PROFINET designs, please visit our industrial Ethernet product pages.</p>
+		<p><span style="color: #165db0;"><strong>Flex VFD</strong></span> - Belden provides a full line of extremely flexible <a href="http://www.belden.com/products/industrialcable/vfd-cable.cfm" target="_blank">variable frequency drive (VFD) cables</a>, with some gauges rated up to 10M flexes for use on-machine according to the NFPA79 guidelines for constant motion cables. For more information on VFD solutions, including extra flexible and continuous flex designs, please visit our VFD product page.</p>
+		<div class="page-header">
+				<h2>Applications & Markets</h2>
+		</div>
+			<p>These highly flexible control, power, video and data cables handle the rigorous speeds and near-constant motion of:</p>
+			<p><strong>Extreme Flexing Applications</strong></p>
+			<div style="float: left; width: 320px; display: block; margin-left: 20px;">
+	        <p><i class="fa fa-check-square-o" style="padding-right:10px;"></i>C-track systems<br>
+					<i class="fa fa-check-square-o" style="padding-right:10px;"></i>Wind turbines</br>
+					<i class="fa fa-check-square-o" style="padding-right:10px;"></i>Robots<br />
+					<i class="fa fa-check-square-o" style="padding-right:10px;"></i>Multi-axis machining</br>
+					<i class="fa fa-check-square-o" style="padding-right:10px;"></i>Automated assembly systems</p>
+			</div>
+			<div style="float: left; width: 320px; display: block;">
+					<p><i class="fa fa-check-square-o" style="padding-right:10px;"></i>Material handling systems<br>
+					<i class="fa fa-check-square-o" style="padding-right:10px;"></i>Pick-and-place retrieval<br>
+					<i class="fa fa-check-square-o" style="padding-right:10px;"></i>Gantry systems<br>
+					<i class="fa fa-check-square-o" style="padding-right:10px;"></i>Automotive assembly equipment<br>
+					<i class="fa fa-check-square-o" style="padding-right:10px;"></i>Automated systems</p>
+			</div>
+			<p><strong>Moderate Flexing Applications</strong></p>
+			<div style="width: 320px; display: block; margin-left: 20px;">
+				<p><i class="fa fa-check-square-o" style="padding-right:10px;"></i>Machine tooling<br>
+					<i class="fa fa-check-square-o" style="padding-right:10px;"></i>Straight Line Assembly<br>
+					<i class="fa fa-check-square-o" style="padding-right:10px;"></i>Control Systems<br>
+					<i class="fa fa-check-square-o" style="padding-right:10px;"></i>Conveyor systems<br></p>
+			</div>
+		<div class="page-header">
+				<h2>Features & Benefits</h2>
+		</div>
+		<p>Unlike conventional cables and cordage, Belden's flex cables offer easy flexing and longer flex life to the end-user:</p>
+		<p><strong>Reduced Cable Memory</strong></br>
+		-Belden cables are produced in a neutralized or relaxed state to exhibit greater flex life throughout their use with almost no memory.</p>
+		<p><strong>Greater Flex Life</strong><br>
+			-Superior flexibility means these cables are able to handle the vigorous motions and high speeds encountered in automated equipment.</p>
+		<p><strong>Greater System Uptime</strong><br>
+			-Belden combines specialized manufacturing techniques with previous copper stranding and rugged insulations and jacketing compounds to maximize the cables' flex life and reliability.</p>
+		<p><strong>Absence of Fatigue</strong><br>
+			-Absence of central core conductors, which are susceptible to fatigue and failure due to the intense forces placed on them, leads to easy flexing throughout the entire cable.</p>
+		<p><strong>No Torque Problems</strong><br>
+			-Belden's unique layering technique eliminates twists in the cable, effectively eliminating torque where other cables would corkscrew and fail.</p>
+		<p><strong>No Talc Problems</strong><br>
+			-Cables that contain airborne contaminants such as talc can be toxic and may contaminate systems, components or machinery. Belden uses a safe, OHSA-compliant compound which reduces friction and facilitates flexing.</p>
+	</div>
+	<div class="ctas">
+		<div class="panel">
+			<h3>Wire & Cable<br />Catalog</h3>
+			<div class="panel-body">
+				<p>Download the Wire & Cable Product Catalog for in-depth product information.</p>
+				<p><a style="float: left; color:#fff; text-align:center; background-color:#545454; padding:8px 0px; border-radius:3px; width: 100%;" target="_blank" href="http://www.belden.com/docs/upload/Cabling-Solutions-for-Industrial-Applications.pdf">Download My Catalog</a></p>
+			</div>
+		</div>
+		<div class="panel">
+			<h3>Flex Cable<br />Resources</h3>
+			<div class="panel-body">
+				<ul>
+				<li><a href="http://www.belden.com/docs/upload/NP303.pdf" target="_blank">Product Bulletin</a></li>
+				<li><a href="http://www.belden.com/docs/upload/Cabling-Solutions-for-Industrial-Applications.pdf" target="_blank">Cabling Solutions for Industrial Applications</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
